@@ -47,13 +47,51 @@
 </template>
 
 <template name="customerlist">
-    {{#if showCustomer}}
-        <h1>Customers</h1>
-    {{/if}}
+{{#if showCustomer}}
+<div class="row">
+<h1>Customers</h1>
+</div>
+<div class="row">
+<a class="btn btn-primary" href="/customer/new">New Customer...</a>
+</div>
+<div class="row">
+<table class="table-striped table-bordered">
+    <tr>
+        <th>&nbsp;</th>
+        <th>Name</th>
+    </tr>
+{{#each customers}}
+    <tr>
+        <td><a href="/customer/{{ _id }}">View...</a></td>
+        <td>{{ name }}</td>
+    </tr>
+{{/each}}
+</table>
+</div>
+{{/if}}
 </template>
 
 <template name="supplierlist">
-    {{#if showSupplier}}
-        <h1>Suppliers</h1>
-    {{/if}}
+{{#if showSupplier}}
+<div class="row">
+<h1>Suppliers</h1>
+</div>
+<div class="row">
+<a class="btn btn-primary" href="/supplier/new">New Supplier...</a>
+</div>
+<div class="row">
+<table class="table-striped table-bordered">
+    <tr>
+        <th>&nbsp;</th>
+        <th>Name</th>
+    </tr>
+{{#each suppliers}}
+    <tr>
+        <td><a href="/supplier/{{ _id }}">View...</a></td>
+        <td>{{ name }}</td>
+    </tr>
+{{/each}}
+</table>
+</div>
+{{/if}}
 </template>

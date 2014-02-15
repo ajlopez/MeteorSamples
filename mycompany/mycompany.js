@@ -1,3 +1,6 @@
+Customers = new Meteor.Collection("customers");
+Suppliers = new Meteor.Collection("suppliers");
+
 if (Meteor.isClient) {
     Template.home.showHome = function() {
         return Session.get("operation") == 'showHome';
@@ -6,10 +9,18 @@ if (Meteor.isClient) {
     Template.customerlist.showCustomer = function() {
         return Session.get("operation") == 'showCustomer';
     }
+    
+    Template.customerlist.customers = function () {
+        return Customers.find();
+    };
 
     Template.supplierlist.showSupplier = function() {
         return Session.get("operation") == 'showSupplier';
     }
+    
+    Template.supplierlist.suppliers = function () {
+        return Suppliers.find();
+    };
     
     Template.about.showAbout = function() {
         return Session.get("operation") == 'showAbout';
@@ -56,7 +67,23 @@ if (Meteor.isClient) {
 }
 
 if (Meteor.isServer) {
-  Meteor.startup(function () {
-    // code to run on server at startup
-  });
+    Meteor.startup(function () {
+        if (Customers.find().count() === 0) {
+            var names = ["Google",
+                   "Microsoft",
+                   "Apple"];
+
+            for (var i = 0; i < names.length; i++)
+                Customers.insert({ name: names[i] });
+        }
+
+        if (Suppliers.find().count() === 0) {
+            var names = ["Amazon",
+                   "Heroku",
+                   "Docker"];
+
+            for (var i = 0; i < names.length; i++)
+                Suppliers.insert({ name: names[i] });
+        }
+    });
 }
