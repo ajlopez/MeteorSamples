@@ -34,6 +34,10 @@ if (Meteor.isClient) {
             app.customerlist();
         }
     };
+
+    Template.customerview.showCustomerView = function() {
+        return Session.get("operation") == 'showCustomerView';
+    }
     
     Template.supplierlist.showSupplier = function() {
         return Session.get("operation") == 'showSupplier';
@@ -56,6 +60,7 @@ if (Meteor.isClient) {
         "":                 "home",
         "customer":         "customerlist",
         "customer/new":      "customernew",
+        "customer/:id":      "customerview",
         "supplier":         "supplierlist",
         "about":            "about",
         "contact":          "contact"
@@ -71,6 +76,15 @@ if (Meteor.isClient) {
 
       customernew: function() {
         Session.set('operation', 'showCustomerNew');
+      },
+
+      customerview: function(id) {
+        //Template.customerview.item = { _id: 1, name: 'Customer 1' };
+        console.log('view', id);
+        var item = Customers.findOne({ _id: id });
+        console.log('item', item);
+        Template.customerview.item = item;
+        Session.set('operation', 'showCustomerView');
       },
 
       supplierlist: function() {

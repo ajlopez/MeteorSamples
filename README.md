@@ -22,11 +22,12 @@
 - [EventedMind / iron-router](https://github.com/EventedMind/iron-router)
 - [How to install atmosphere packages without meteorite?](http://stackoverflow.com/questions/18159924/how-to-install-atmosphere-packages-without-meteorite)
 - [Meteor Youtube videos](http://www.youtube.com/user/MeteorVideos/videos)
-- [Bikestorming](https://github.com/Bikestorming) https://github.com/Bikestorming/bikestorming
-- [Lightsaber](https://github.com/Bikestorming/lightsaber)
 - [Fun doesn't mean compromising scalability - all that jazz](http://jazzy.id.au/default/2013/12/17/fun_doesnt_mean_compromising_scalability.html)
 - [Let's Scale Meteor - Using MongoDB Oplog](http://meteorhacks.com/lets-scale-meteor.html)
-
+- [Bikestorming](https://github.com/Bikestorming) https://github.com/Bikestorming/bikestorming
+- [Lightsaber](https://github.com/Bikestorming/lightsaber)
+- [A starter template for Meteor, using IronRouter](https://github.com/SachaG/Void)
+- [Common Mistakes Developing With Meteor – Collections](http://shiggyenterprises.wordpress.com/2013/10/24/common-mistakes-made-while-developing-with-meteor-collections/)
 
 
 

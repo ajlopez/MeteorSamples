@@ -35,6 +35,7 @@
     {{> home}}
     {{> customerlist}}
     {{> customernew}}
+    {{> customerview}}
     {{> supplierlist}}
     {{> about}}
     {{> contact}}
@@ -118,5 +119,31 @@
 </form>
 </div>
 {{/if}}
+</template>
+
+<template name="customerview">
+{{#if showCustomerView}}
+<div class="row">
+<h1>Customer</h1>
+</div>
+
+<div class="row actions">
+<a class="btn btn-info btn-sm" href="/customer">Customers</a>
+<a class="btn btn-primary btn-sm" href="/customer/{{ item._id }}/edit">Edit Customer</a>
+<a class="btn btn-danger btn-sm" href="/customer/{{ item._id }}/remove">Delete Customer</a>
+</div>
+
+<div class="row">
+    <table class="table-bordered">
+
+        <tr>
+            <td>Name</td>
+            <td>{{ item.name }}</td>
+        </tr>
+    
+    </table>
+</div>
+{{/if}}
+
 </template>
 
