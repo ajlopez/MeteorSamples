@@ -81,7 +81,7 @@ if (Meteor.isClient) {
       customerview: function(id) {
         //Template.customerview.item = { _id: 1, name: 'Customer 1' };
         console.log('view', id);
-        var item = Customers.findOne({ _id: id });
+        var item = Customers.find({ _id: id }, { limit: 1, reactive: false}).fetch()[0];
         console.log('item', item);
         Template.customerview.item = item;
         Session.set('operation', 'showCustomerView');

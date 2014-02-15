@@ -28,6 +28,6 @@
 - [Lightsaber](https://github.com/Bikestorming/lightsaber)
 - [A starter template for Meteor, using IronRouter](https://github.com/SachaG/Void)
 - [Common Mistakes Developing With Meteor – Collections](http://shiggyenterprises.wordpress.com/2013/10/24/common-mistakes-made-while-developing-with-meteor-collections/)
-
+- [Collection.findOne(..) is undefined in Template....rendered](https://github.com/meteor/meteor/issues/837)
 
 
