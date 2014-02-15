@@ -1,0 +1,23 @@
+<head>
+  <title>Mathematicians</title>
+</head>
+
+<body>
+  <div id="outer">
+    {{> maths}}
+  </div>
+</body>
+
+<template name="maths">
+  <div class="list">
+    {{#each mathematicians}}
+      {{> math}}
+    {{/each}}
+  </div>
+</template>
+
+<template name="math">
+  <div class="math">
+    <span class="name">{{name}}</span>
+  </div>
+</template>
