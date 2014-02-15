@@ -7,6 +7,7 @@
 - [Documentation](http://docs.meteor.com/)
 - [Quick Start](http://docs.meteor.com/#quickstart)
 - [Seven Principles](http://docs.meteor.com/#sevenprinciples)
+- [An Introduction to Meteor](http://stephenwalther.com/archive/2013/03/18/an-introduction-to-meteor)
 - [Building An App In 45 Minutes With Meteor](http://www.smashingmagazine.com/2013/06/13/build-app-45-minutes-meteor/)
 - [Meteor: Links And Resources (1)](http://ajlopez.wordpress.com/2014/02/15/meteor-links-and-resources-1/)
 - [How do I create multi-page applications with Meteor?](http://stackoverflow.com/questions/11740368/how-do-i-create-multi-page-applications-with-meteor)
@@ -19,5 +20,12 @@
 - [Advanced Routing in Meteor: Navigation State w/ Handlebars Helpers and Route Functions](https://properapp.com/meteor/advanced-routing-in-meteor-navigation-state-w/#.Uv-lvfldUms)
 - [EventedMind / iron-router](https://github.com/EventedMind/iron-router)
 - [How to install atmosphere packages without meteorite?](http://stackoverflow.com/questions/18159924/how-to-install-atmosphere-packages-without-meteorite)
+- [Meteor Youtube videos](http://www.youtube.com/user/MeteorVideos/videos)
+- [Bikestorming](https://github.com/Bikestorming) https://github.com/Bikestorming/bikestorming
+- [Lightsaber](https://github.com/Bikestorming/lightsaber)
+- [Fun doesn't mean compromising scalability - all that jazz](http://jazzy.id.au/default/2013/12/17/fun_doesnt_mean_compromising_scalability.html)
+- [Let's Scale Meteor - Using MongoDB Oplog](http://meteorhacks.com/lets-scale-meteor.html)
+
+
 
 

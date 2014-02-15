@@ -15,7 +15,7 @@ if (Meteor.isClient) {
       routes: {
         "":                 "home", //this will be http://your_domain/
         "about":            "about",  // http://your_domain/about
-        "contact":          "contact"  // http://your_domain/about
+        "contact":          "contact"  // http://your_domain/contact
       },
 
       home: function() {
