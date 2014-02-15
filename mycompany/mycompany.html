@@ -1,5 +1,6 @@
 <head>
-  <title>bootstrap</title>
+    <title>My Company</title>
+    
     <style>
       body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
@@ -16,10 +17,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="/">Meteor and Bootstrap</a>
+          <a class="brand" href="/">My Company</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li><a href="/">Home</a></li>
+              <li><a href="/customer">Customers</a></li>
+              <li><a href="/supplier">Suppliers</a></li>
               <li><a href="/about">About</a></li>
               <li><a href="/contact">Contact</a></li>
             </ul>
@@ -29,9 +32,28 @@
     </div>
 
     <div class="container">
- {{> home}}
- {{> about}}
- {{> contact }}
-
+    {{> home}}
+    {{> customerlist}}
+    {{> supplierlist}}
+    {{> about}}
+    {{> contact}}
     </div>
 </body>
+
+<template name="home">
+    {{#if showHome}}
+        <h1>My Company</h1>
+    {{/if}}
+</template>
+
+<template name="customerlist">
+    {{#if showCustomer}}
+        <h1>Customers</h1>
+    {{/if}}
+</template>
+
+<template name="supplierlist">
+    {{#if showSupplier}}
+        <h1>Suppliers</h1>
+    {{/if}}
+</template>

@@ -9,6 +9,7 @@
 - [Seven Principles](http://docs.meteor.com/#sevenprinciples)
 - [An Introduction to Meteor](http://stephenwalther.com/archive/2013/03/18/an-introduction-to-meteor)
 - [Building An App In 45 Minutes With Meteor](http://www.smashingmagazine.com/2013/06/13/build-app-45-minutes-meteor/)
+- [Scaling Meteor: The Challenges of Real-time Apps](https://www.discovermeteor.com/blog/scaling-meteor-the-challenges-of-realtime-apps/)
 - [Meteor: Links And Resources (1)](http://ajlopez.wordpress.com/2014/02/15/meteor-links-and-resources-1/)
 - [How do I create multi-page applications with Meteor?](http://stackoverflow.com/questions/11740368/how-do-i-create-multi-page-applications-with-meteor)
 - [Questions Meteor about changing view](http://stackoverflow.com/questions/15278756/questions-meteor-about-changing-view-and-putting-array-in-collection)
