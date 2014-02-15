@@ -14,6 +14,27 @@ if (Meteor.isClient) {
         return Customers.find();
     };
 
+    Template.customernew.showCustomerNew = function() {
+        return Session.get("operation") == 'showCustomerNew';
+    }
+
+    Template.customernew.events = {
+        'submit': function (e, tmpl) {
+            // Don't postback
+            e.preventDefault();
+     
+            // create the new customer
+            var newCustomer = {
+                name: tmpl.find("#name").value
+            };
+     
+            // add the movie to the db
+            Customers.insert(newCustomer);
+            
+            app.customerlist();
+        }
+    };
+    
     Template.supplierlist.showSupplier = function() {
         return Session.get("operation") == 'showSupplier';
     }
@@ -32,11 +53,12 @@ if (Meteor.isClient) {
 
     var Router = Backbone.Router.extend({
       routes: {
-        "":                 "home", //this will be http://your_domain/
-        "customer":         "customerlist",  // http://your_domain/about
-        "supplier":         "supplierlist",  // http://your_domain/about
-        "about":            "about",  // http://your_domain/about
-        "contact":          "contact"  // http://your_domain/contact
+        "":                 "home",
+        "customer":         "customerlist",
+        "customer/new":      "customernew",
+        "supplier":         "supplierlist",
+        "about":            "about",
+        "contact":          "contact"
       },
 
       home: function() {
@@ -45,6 +67,10 @@ if (Meteor.isClient) {
 
       customerlist: function() {
         Session.set('operation', 'showCustomer');
+      },
+
+      customernew: function() {
+        Session.set('operation', 'showCustomerNew');
       },
 
       supplierlist: function() {
@@ -61,6 +87,7 @@ if (Meteor.isClient) {
     });
     
     var app = new Router;
+    
     Meteor.startup(function () {
       Backbone.history.start({pushState: true});
     });
