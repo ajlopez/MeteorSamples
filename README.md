@@ -81,3 +81,15 @@ My links about Meteor and MongoDB https://delicious.com/ajlopez/meteor,mongodb
 - [Fun doesn't mean compromising scalability - all that jazz](http://jazzy.id.au/default/2013/12/17/fun_doesnt_mean_compromising_scalability.html)
 - [Let's Scale Meteor - Using MongoDB Oplog](http://meteorhacks.com/lets-scale-meteor.html)
 
+### Presentations and Talks
+
+- [Meteor Buenos Aires! by Yuriy Dybskiy](http://slid.es/html5cat/meteor-ba)
+- [Meteor Intro](http://slid.es/cwaring/meteorjs-intro-dec)
+- [David Glasser: Making Mongo realtime - oplog tailing i](https://www.youtube.com/watch?v=_dzX_LEbZyI)
+- [Meteor Youtube videos](http://www.youtube.com/user/MeteorVideos/videos)
+- [Overview of Derby.js and Meteor.js (for 7/10 NoVa Node.js Meetup)](http://www.slideshare.net/studgeek/an-overview-of-derbyjs-and-meteorjs-for-the-nova-nodejs-meetup)
+- [Aplicaciones en tiempo real con meteor](http://slid.es/edsadr/aplicaciones-en-tiempo-real-con-meteor/)
+
+
+
+My Links https://delicious.com/ajlopez/meteor,presentation
