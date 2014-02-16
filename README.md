@@ -30,5 +30,6 @@
 - [Common Mistakes Developing With Meteor – Collections](http://shiggyenterprises.wordpress.com/2013/10/24/common-mistakes-made-while-developing-with-meteor-collections/)
 - [Beginner Meteor: template and findOne](http://stackoverflow.com/questions/10400480/beginner-meteor-template-and-findone)
 - [Collection.findOne(..) is undefined in Template....rendered](https://github.com/meteor/meteor/issues/837)
+- [Case Studies: Verso, Meteor, mobile and PhoneGap](http://percolatestudio.com/case-studies/verso)
 
 
