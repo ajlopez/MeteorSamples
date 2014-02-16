@@ -53,7 +53,7 @@
 <div class="row">
 <h1>Customers</h1>
 </div>
-<div class="row">
+<div class="row actions">
 <a class="btn btn-primary" href="/customer/new">New Customer...</a>
 </div>
 <div class="row">
@@ -78,7 +78,7 @@
 <div class="row">
 <h1>Suppliers</h1>
 </div>
-<div class="row">
+<div class="row actions">
 <a class="btn btn-primary" href="/supplier/new">New Supplier...</a>
 </div>
 <div class="row">
@@ -129,8 +129,8 @@
 
 <div class="row actions">
 <a class="btn btn-info btn-sm" href="/customer">Customers</a>
-<a class="btn btn-primary btn-sm" href="/customer/{{ item._id }}/edit">Edit Customer</a>
-<a class="btn btn-danger btn-sm" href="/customer/{{ item._id }}/remove">Delete Customer</a>
+<a class="btn btn-primary btn-sm" href="/customer/{{ customer._id }}/edit">Edit Customer</a>
+<a class="btn btn-danger btn-sm" href="/customer/{{ customer._id }}/remove">Delete Customer</a>
 </div>
 
 <div class="row">
@@ -138,7 +138,7 @@
 
         <tr>
             <td>Name</td>
-            <td>{{ item.name }}</td>
+            <td>{{ customer.name }}</td>
         </tr>
     
     </table>

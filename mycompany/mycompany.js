@@ -38,6 +38,13 @@ if (Meteor.isClient) {
     Template.customerview.showCustomerView = function() {
         return Session.get("operation") == 'showCustomerView';
     }
+
+    Template.customerview.customer = function () {
+        var id = Session.get("customerId");
+        
+        if (id)
+            return Customers.findOne({ _id: id });
+    };
     
     Template.supplierlist.showSupplier = function() {
         return Session.get("operation") == 'showSupplier';
@@ -79,11 +86,8 @@ if (Meteor.isClient) {
       },
 
       customerview: function(id) {
-        //Template.customerview.item = { _id: 1, name: 'Customer 1' };
         console.log('view', id);
-        var item = Customers.find({ _id: id }, { limit: 1, reactive: false}).fetch()[0];
-        console.log('item', item);
-        Template.customerview.item = item;
+        Session.set("customerId", id);
         Session.set('operation', 'showCustomerView');
       },
 
