@@ -17,6 +17,7 @@
     {{> customernew}}
     {{> customerview}}
     {{> supplierlist}}
+    {{> suppliernew}}
     {{> about}}
     {{> contact}}
     </div>
@@ -83,7 +84,7 @@
 <h1>Suppliers</h1>
 </div>
 <div class="row actions">
-<a class="btn btn-primary" href="/supplier/new">New Supplier</a>
+<input class="btn btn-primary suppliernew" type="button" value = "New Supplier" />
 </div>
 <div class="row">
 <table class="table-striped table-bordered">
@@ -93,7 +94,7 @@
     </tr>
 {{#each suppliers}}
     <tr>
-        <td><a href="/supplier/{{ _id }}">View</a></td>
+        <td><a href="#/supplier/{{ _id }}" class="supplierview">View</a></td>
         <td>{{ name }}</td>
     </tr>
 {{/each}}
@@ -151,3 +152,25 @@
 
 </template>
 
+<template name="suppliernew">
+{{#if showSupplierNew}}
+<div class="row">
+<h1>New Supplier</h1>
+</div>
+<div class="row actions">
+<input type="button" class="btn btn-info btn-sm supplierlist" value="Suppliers" />
+</div>
+
+<div class='row'>
+<form role="form" class="form">
+
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" name="name" id="name">
+    </div>    
+    
+    <input class="btn btn-primary" type="submit" value="Create" />
+</form>
+</div>
+{{/if}}
+</template>

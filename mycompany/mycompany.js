@@ -27,6 +27,7 @@ if (Meteor.isClient) {
     Template.customerlist.showCustomer = function() {
         return Session.get("operation") == 'showCustomer';
     }
+
     Template.customerlist.customers = function () {
         return Customers.find();
     };
@@ -57,7 +58,7 @@ if (Meteor.isClient) {
                 name: tmpl.find("#name").value
             };
      
-            // add the movie to the db
+            // add the customer to the db
             Customers.insert(newCustomer);
             
             app.customerlist();
@@ -88,14 +89,47 @@ if (Meteor.isClient) {
     Template.supplierlist.suppliers = function () {
         return Suppliers.find();
     };
+
+    Template.supplierlist.events({
+        'click input.suppliernew': function () {
+            app.suppliernew();
+        },
+        'click a.supplierview': function () {
+            app.supplierview(this._id);
+        },
+    });    
+    
+    Template.suppliernew.showSupplierNew = function() {
+        return Session.get("operation") == 'showSupplierNew';
+    };
+
+    Template.suppliernew.events = {
+        'click input.supplierlist': function () {
+            app.supplierlist();
+        },
+        'submit': function (e, tmpl) {
+            // Don't postback
+            e.preventDefault();
+     
+            // create the new supplier
+            var newSupplier = {
+                name: tmpl.find("#name").value
+            };
+     
+            // add the supplier to the db
+            Suppliers.insert(newSupplier);
+            
+            app.supplierlist();
+        }
+    };
     
     Template.about.showAbout = function() {
         return Session.get("operation") == 'showAbout';
-    }
+    };
     
     Template.contact.showContact = function() {
         return Session.get("operation") == 'showContact';
-    }
+    };
 
     var Router = Backbone.Router.extend({
       routes: {
@@ -104,8 +138,10 @@ if (Meteor.isClient) {
         "customer/new":      "customernew",
         "customer/:id":      "customerview",
         "supplier":         "supplierlist",
+        "supplier/new":      "suppliernew",
+        "supplier/:id":      "supplierview",
         "about":            "about",
-        "contact":          "contact"
+        "contact":          "contact",
       },
 
       home: function() {
@@ -121,13 +157,21 @@ if (Meteor.isClient) {
       },
 
       customerview: function(id) {
-        console.log('view', id);
         Session.set("customerId", id);
         Session.set('operation', 'showCustomerView');
       },
 
       supplierlist: function() {
         Session.set('operation', 'showSupplier');
+      },
+
+      suppliernew: function() {
+        Session.set('operation', 'showSupplierNew');
+      },
+
+      supplierview: function(id) {
+        Session.set("supplierId", id);
+        Session.set('operation', 'showSupplierView');
       },
 
       about: function() {

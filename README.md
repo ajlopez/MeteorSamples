@@ -72,6 +72,10 @@ My links https://delicious.com/ajlopez/meteor,events
 - [Beginner Meteor: template and findOne](http://stackoverflow.com/questions/10400480/beginner-meteor-template-and-findone)
 - [Collection.findOne(..) is undefined in Template....rendered](https://github.com/meteor/meteor/issues/837)
 
+### MongoDB
+
+- [Meteor without mongo](http://stackoverflow.com/questions/18545905/meteor-without-mongo) See TingoDB, and how to modify Meteor code, and `node main.js`
+
 My links about Meteor and MongoDB https://delicious.com/ajlopez/meteor,mongodb
 
 ### Hosting
@@ -92,7 +96,5 @@ My links about Meteor and MongoDB https://delicious.com/ajlopez/meteor,mongodb
 - [Meteor Youtube videos](http://www.youtube.com/user/MeteorVideos/videos)
 - [Overview of Derby.js and Meteor.js (for 7/10 NoVa Node.js Meetup)](http://www.slideshare.net/studgeek/an-overview-of-derbyjs-and-meteorjs-for-the-nova-nodejs-meetup)
 - [Aplicaciones en tiempo real con meteor](http://slid.es/edsadr/aplicaciones-en-tiempo-real-con-meteor/)
-
-
 
 My Links https://delicious.com/ajlopez/meteor,presentation
