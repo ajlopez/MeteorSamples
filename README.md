@@ -60,6 +60,9 @@ My links https://delicious.com/ajlopez/meteor,testing
 ### Events
 
 - [How to listen for click events on the whole page in meteor?](http://stackoverflow.com/questions/13298094/how-to-listen-for-click-events-on-the-whole-page-in-meteor)
+- [The context of “this” in Meteor template event handlers (using Handlebars for templating)](http://stackoverflow.com/questions/15137206/the-context-of-this-in-meteor-template-event-handlers-using-handlebars-for-te)
+
+My links https://delicious.com/ajlopez/meteor,events
 
 ### Troubleshooting
 

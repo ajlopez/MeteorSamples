@@ -68,7 +68,7 @@
     </tr>
 {{#each customers}}
     <tr>
-        <td><a href="/customer/{{ _id }}">View...</a></td>
+        <td><a href="#customer/{{ _id }}" class="customerview">View</a></td>
         <td>{{ name }}</td>
     </tr>
 {{/each}}
@@ -83,7 +83,7 @@
 <h1>Suppliers</h1>
 </div>
 <div class="row actions">
-<a class="btn btn-primary" href="/supplier/new">New Supplier...</a>
+<a class="btn btn-primary" href="/supplier/new">New Supplier</a>
 </div>
 <div class="row">
 <table class="table-striped table-bordered">
@@ -93,7 +93,7 @@
     </tr>
 {{#each suppliers}}
     <tr>
-        <td><a href="/supplier/{{ _id }}">View...</a></td>
+        <td><a href="/supplier/{{ _id }}">View</a></td>
         <td>{{ name }}</td>
     </tr>
 {{/each}}
@@ -108,7 +108,7 @@
 <h1>New Customer</h1>
 </div>
 <div class="row actions">
-<a class="btn btn-info btn-sm" href="/customer">Customers</a>
+<input type="button" class="btn btn-info btn-sm customerlist" value="Customers" />
 </div>
 
 <div class='row'>
@@ -132,9 +132,9 @@
 </div>
 
 <div class="row actions">
-<a class="btn btn-info btn-sm" href="/customer">Customers</a>
-<a class="btn btn-primary btn-sm" href="/customer/{{ customer._id }}/edit">Edit Customer</a>
-<a class="btn btn-danger btn-sm" href="/customer/{{ customer._id }}/remove">Delete Customer</a>
+<input type="button" class="btn btn-info btn-sm customerlist" value="Customers" />
+<a class="btn btn-primary btn-sm" href="#customer/{{ customer._id }}/edit">Edit Customer</a>
+<a class="btn btn-danger btn-sm" href="#customer/{{ customer._id }}/remove">Delete Customer</a>
 </div>
 
 <div class="row">
