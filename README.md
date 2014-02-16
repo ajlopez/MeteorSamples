@@ -41,6 +41,12 @@ My links https://delicious.com/ajlopez/meteor,routing
 ### Mobile
 
 - [Case Studies: Verso, Meteor, mobile and PhoneGap](http://percolatestudio.com/case-studies/verso)
+- [meteor-phonegap, Meteor app to a Phonegap app](https://github.com/guaka/meteor-phonegap)
+- [Can Meteor be used with PhoneGap?](http://stackoverflow.com/questions/10322723/can-meteor-be-used-with-phonegap)
+- [Meteor on Mobile Device using PhoneGap](http://blog.snowflax.com/meteor-on-mobile-device-using-phonegap/)
+- [A guide to PhoneGap 3 development for Android on Windows](http://teusink.blogspot.com.ar/2013/07/guide-phonegap-3-android-windows.html)
+
+My links https://delicious.com/ajlopez/meteor,mobile  https://delicious.com/ajlopez/meteor,phonegap
 
 ### Packaging
 
