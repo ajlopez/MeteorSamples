@@ -3,6 +3,9 @@ Suppliers = new Meteor.Collection("suppliers");
 
 if (Meteor.isClient) {
     Template.topbar.events({
+        'click a.home': function () {
+            app.home();
+        },
         'click a.customerlist': function () {
             app.customerlist();
         },
@@ -14,7 +17,7 @@ if (Meteor.isClient) {
         },
         'click a.contact': function () {
             app.contact();
-        }
+        },
     });    
     
     Template.home.showHome = function() {
