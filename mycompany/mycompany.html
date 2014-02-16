@@ -9,6 +9,20 @@
 </head>
 
 <body>
+    {{> topbar}}
+
+    <div class="container">
+    {{> home}}
+    {{> customerlist}}
+    {{> customernew}}
+    {{> customerview}}
+    {{> supplierlist}}
+    {{> about}}
+    {{> contact}}
+    </div>
+</body>
+
+<template name="topbar">
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -21,26 +35,16 @@
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li><a href="/">Home</a></li>
-              <li><a href="/customer">Customers</a></li>
-              <li><a href="/supplier">Suppliers</a></li>
-              <li><a href="/about">About</a></li>
-              <li><a href="/contact">Contact</a></li>
+              <li><a href="#customer" class="customerlist">Customers</a></li>
+              <li><a href="#supplier" class="supplierlist">Suppliers</a></li>
+              <li><a href="#about" class="about">About</a></li>
+              <li><a href="#contact" class="contact">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
-
-    <div class="container">
-    {{> home}}
-    {{> customerlist}}
-    {{> customernew}}
-    {{> customerview}}
-    {{> supplierlist}}
-    {{> about}}
-    {{> contact}}
-    </div>
-</body>
+</template>
 
 <template name="home">
     {{#if showHome}}
@@ -54,7 +58,7 @@
 <h1>Customers</h1>
 </div>
 <div class="row actions">
-<a class="btn btn-primary" href="/customer/new">New Customer...</a>
+<input class="btn btn-primary customernew" type="button" value = "New Customer" />
 </div>
 <div class="row">
 <table class="table-striped table-bordered">

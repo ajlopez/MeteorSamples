@@ -2,6 +2,21 @@ Customers = new Meteor.Collection("customers");
 Suppliers = new Meteor.Collection("suppliers");
 
 if (Meteor.isClient) {
+    Template.topbar.events({
+        'click a.customerlist': function () {
+            app.customerlist();
+        },
+        'click a.supplierlist': function () {
+            app.supplierlist();
+        },
+        'click a.about': function () {
+            app.about();
+        },
+        'click a.contact': function () {
+            app.contact();
+        }
+    });    
+    
     Template.home.showHome = function() {
         return Session.get("operation") == 'showHome';
     }
@@ -9,11 +24,16 @@ if (Meteor.isClient) {
     Template.customerlist.showCustomer = function() {
         return Session.get("operation") == 'showCustomer';
     }
-    
     Template.customerlist.customers = function () {
         return Customers.find();
     };
 
+    Template.customerlist.events({
+        'click input.customernew': function () {
+            app.customernew();
+        }
+    });    
+    
     Template.customernew.showCustomerNew = function() {
         return Session.get("operation") == 'showCustomerNew';
     }
