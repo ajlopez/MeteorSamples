@@ -123,6 +123,23 @@ if (Meteor.isClient) {
         }
     };
     
+    Template.supplierview.showSupplierView = function() {
+        return Session.get("operation") == 'showSupplierView';
+    }
+
+    Template.supplierview.supplier = function () {
+        var id = Session.get("supplierId");
+        
+        if (id)
+            return Suppliers.findOne({ _id: id });
+    };
+
+    Template.supplierview.events({
+        'click input.supplierlist': function () {
+            app.supplierlist();
+        },
+    });    
+
     Template.about.showAbout = function() {
         return Session.get("operation") == 'showAbout';
     };
