@@ -1,0 +1,25 @@
+<template name="customerlist">
+{{#if showCustomer}}
+<div class="row">
+<h1>Customers</h1>
+</div>
+<div class="row actions">
+<input class="btn btn-primary customernew" type="button" value = "New Customer" />
+</div>
+<div class="row">
+<table class="table-striped table-bordered">
+    <tr>
+        <th>&nbsp;</th>
+        <th>Name</th>
+    </tr>
+{{#each customers}}
+    <tr>
+        <td><a href="#customer/{{ _id }}" class="customerview">View</a></td>
+        <td>{{ name }}</td>
+    </tr>
+{{/each}}
+</table>
+</div>
+{{/if}}
+</template>
+

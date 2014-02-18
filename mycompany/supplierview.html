@@ -1,0 +1,25 @@
+<template name="supplierview">
+{{#if showSupplierView}}
+<div class="row">
+<h1>Supplier</h1>
+</div>
+
+<div class="row actions">
+<input type="button" class="btn btn-info btn-sm supplierlist" value="Suppliers" />
+<a class="btn btn-primary btn-sm" href="#supplier/{{ supplier._id }}/edit">Edit Supplier</a>
+<a class="btn btn-danger btn-sm" href="#supplier/{{ supplier._id }}/remove">Delete Supplier</a>
+</div>
+
+<div class="row">
+    <table class="table-bordered">
+
+        <tr>
+            <td>Name</td>
+            <td>{{ supplier.name }}</td>
+        </tr>
+    
+    </table>
+</div>
+{{/if}}
+
+</template>

@@ -1,0 +1,25 @@
+<template name="supplierlist">
+{{#if showSupplier}}
+<div class="row">
+<h1>Suppliers</h1>
+</div>
+<div class="row actions">
+<input class="btn btn-primary suppliernew" type="button" value = "New Supplier" />
+</div>
+<div class="row">
+<table class="table-striped table-bordered">
+    <tr>
+        <th>&nbsp;</th>
+        <th>Name</th>
+    </tr>
+{{#each suppliers}}
+    <tr>
+        <td><a href="#/supplier/{{ _id }}" class="supplierview">View</a></td>
+        <td>{{ name }}</td>
+    </tr>
+{{/each}}
+</table>
+</div>
+{{/if}}
+</template>
+

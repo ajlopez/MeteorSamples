@@ -1,0 +1,26 @@
+<template name="customerview">
+{{#if showCustomerView}}
+<div class="row">
+<h1>Customer</h1>
+</div>
+
+<div class="row actions">
+<input type="button" class="btn btn-info btn-sm customerlist" value="Customers" />
+<a class="btn btn-primary btn-sm" href="#customer/{{ customer._id }}/edit">Edit Customer</a>
+<a class="btn btn-danger btn-sm" href="#customer/{{ customer._id }}/remove">Delete Customer</a>
+</div>
+
+<div class="row">
+    <table class="table-bordered">
+
+        <tr>
+            <td>Name</td>
+            <td>{{ customer.name }}</td>
+        </tr>
+    
+    </table>
+</div>
+{{/if}}
+
+</template>
+
