@@ -18,6 +18,7 @@
 - [Introduction to Realtime Web with Meteor and Node.js](http://www.andrewmunsell.com/blog/introduction-to-realtime-web-meteor-and-nodejs)
 - [Meteor tutorial for fellow noobs: Adding features to the Leaderboard demo](http://www.danneu.com/posts/6-meteor-tutorial-for-fellow-noobs-adding-features-to-the-leaderboard-demo/)
 - [Day 15: Meteor--Building a Web App From Scratch in Meteor](https://www.openshift.com/blogs/day-15-meteor-building-a-web-app-from-scratch-in-meteor)
+- [Learning Meteor - Tips and Tricks](http://www.vladfilippov.com/blog/2012-12-07-learning-meteor)
 
 My links https://delicious.com/ajlopez/meteor,tutorial
 
@@ -45,14 +46,16 @@ My links https://delicious.com/ajlopez/meteor,routing
 - [Can Meteor be used with PhoneGap?](http://stackoverflow.com/questions/10322723/can-meteor-be-used-with-phonegap)
 - [Meteor on Mobile Device using PhoneGap](http://blog.snowflax.com/meteor-on-mobile-device-using-phonegap/)
 - [A guide to PhoneGap 3 development for Android on Windows](http://teusink.blogspot.com.ar/2013/07/guide-phonegap-3-android-windows.html)
+- [Realtime Maps With Meteor and Leaflet - Part One](http://asynchrotron.com/blog/2013/12/27/realtime-maps-with-meteor-and-leaflet/)
 
 My links https://delicious.com/ajlopez/meteor,mobile  https://delicious.com/ajlopez/meteor,phonegap
 
-### Packaging
+### Packages
 
 - [Why does Meteor use its own package system rather than NPM?](http://www.quora.com/Node-js/Why-does-Meteor-use-its-own-package-system-rather-than-NPM)
 - [How to install atmosphere packages without meteorite?](http://stackoverflow.com/questions/18159924/how-to-install-atmosphere-packages-without-meteorite)
 - [Complete NPM integration for Meteor](http://meteorhacks.com/complete-npm-integration-for-meteor.html)
+- [How do I read and write files to the server with Meteor?](http://stackoverflow.com/questions/17158305/how-do-i-read-and-write-files-to-the-server-with-meteor) the `fs` module
 
 More links about NPM and Meteor https://delicious.com/ajlopez/meteor,npm
 Links about Atmosphere https://delicious.com/ajlopez/meteor,atmosphere
@@ -84,10 +87,12 @@ My links https://delicious.com/ajlopez/meteor,events
 
 My links about Meteor and MongoDB https://delicious.com/ajlopez/meteor,mongodb
 
-### Hosting
+### Hosting and Deployment
 
 - [Hosting a Meteor App on Nodejitsu](https://properapp.com/meteor/hosting-a-meteor-app-on-nodejitsu-2/#.Uv-mn_ldUms)
 - [Demeteorizer wraps and extends Meteor’s bundle command](http://blog.modulus.io/demeteorizer)
+- [Phusion Passenger: Meteor tutorial](https://github.com/phusion/passenger/wiki/Phusion-Passenger:-Meteor-tutorial)
+- [Pushing Your Meteor Project to Heroku](http://bytesofpi.com/post/20898722298/pushing-your-meteor-project-to-heroku)
 
 ### Scalability
 
@@ -102,5 +107,7 @@ My links about Meteor and MongoDB https://delicious.com/ajlopez/meteor,mongodb
 - [Meteor Youtube videos](http://www.youtube.com/user/MeteorVideos/videos)
 - [Overview of Derby.js and Meteor.js (for 7/10 NoVa Node.js Meetup)](http://www.slideshare.net/studgeek/an-overview-of-derbyjs-and-meteorjs-for-the-nova-nodejs-meetup)
 - [Aplicaciones en tiempo real con meteor](http://slid.es/edsadr/aplicaciones-en-tiempo-real-con-meteor/)
+- [The Meteor Podcast](http://www.meteorpodcast.com/) Many resource links
+- [6 must-see Meteor talks from 2013](https://www.meteor.com/blog/2014/01/03/6-must-see-meteor-talks-from-2013)
 
 My Links https://delicious.com/ajlopez/meteor,presentation
