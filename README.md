@@ -19,6 +19,8 @@
 - [Meteor tutorial for fellow noobs: Adding features to the Leaderboard demo](http://www.danneu.com/posts/6-meteor-tutorial-for-fellow-noobs-adding-features-to-the-leaderboard-demo/)
 - [Day 15: Meteor--Building a Web App From Scratch in Meteor](https://www.openshift.com/blogs/day-15-meteor-building-a-web-app-from-scratch-in-meteor)
 - [Learning Meteor - Tips and Tricks](http://www.vladfilippov.com/blog/2012-12-07-learning-meteor)
+- [Learn Meteor Fundamentals and Best Practices](http://andrewscala.com/meteor/)
+- [An Introduction to Meteor](http://stephenwalther.com/archive/2013/03/18/an-introduction-to-meteor)
 
 My links https://delicious.com/ajlopez/meteor,tutorial
 
