@@ -1,0 +1,21 @@
+<head>
+  <title>LendLib</title>
+</head>
+
+<body>
+  <div id="categories-container">
+    {{> categories }}
+  </div>
+</body>
+
+<template name="categories">
+    <h2 class="title">My Stuff</h2>
+    
+    <div id="categories" class="btn-group">
+    {{#each lists}}
+    <div class="category btn btn-success">
+        {{Category}}
+    </div>
+    {{/each}}
+    </div>
+</template>
