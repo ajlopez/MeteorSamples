@@ -12,6 +12,13 @@
     <h2 class="title">My Stuff</h2>
     
     <div id="categories" class="btn-group">
+    {{#if new_cat}}
+    <div class="category">
+    <input type="text" id="add-category" value="" />
+    </div>
+    {{else}}
+    <div class="category btn btn-success" id="btnNewCat">&plus;</div>
+    {{/if}}
     {{#each lists}}
     <div class="category btn btn-success">
         {{Category}}
